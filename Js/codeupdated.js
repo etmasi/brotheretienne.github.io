@@ -8,4 +8,4 @@ let sec = new Date().getSeconds();
 
 let formated_day_time = mm+'/'+dd+'/'+yyy+' '+ hrs+':'+min+':'+sec;
 
-document.getElementById('lastUpdated').innerHTML = formated_day_time;
+document.getElementById('codeupdatedpdated').innerHTML = formated_day_time;
