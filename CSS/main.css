@@ -1,0 +1,23 @@
+body{
+
+    background-color:#F2F2F2
+}
+#content{
+    background-color:rebeccapurple
+    max-width:75%
+    margin:100px auto;
+    border-radius: 15;
+}
+
+img{
+    float:right;
+    margin-right:15px;
+    border-radius: 10px
+    box-shadow:-3px -3px 3px lightgrey
+}
+
+h1{
+
+font-family: "serif", :
+
+}
