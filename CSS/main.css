@@ -13,11 +13,28 @@ img{
     float:right;
     margin-right:15px;
     border-radius: 10px
-    box-shadow:-3px -3px 3px lightgrey
+    box-shadow:-3px -3px 6px lightgrey 2px 2px 
 }
 
 h1{
 
-font-family: "serif", :
+font-family: "serif", "Zilla Slab";
+font-size:3.5em;
 
 }
+
+hr {
+    width: 75%;
+    border: 3px solid red;
+    margin-left: 0;
+  }
+
+  .BYUI {
+    color: beige;
+}
+
+footer a:hover {
+    color: royalblue;
+}
+#lastModified {
+    margin-right: 320px;
