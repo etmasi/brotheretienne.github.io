@@ -39,6 +39,11 @@ header h1 {
     padding: 0.7em 0.7em;
     padding-right: 0;
 }
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 16px;
+    }
+}
 
 main {
    padding: 0 15px;
@@ -48,6 +53,11 @@ main {
 main > h2 {
     margin: 0;
     font-size: 18px;
+}
+@media only screen and (max-width: 600px) {
+    main h2 {
+        font-size: 14px;
+    }
 }
 
 main ul {
@@ -70,7 +80,7 @@ footer {
 }
 
 footer .first-line {
-    font-size: 8.5px;
+    font-size: 10px;
 }
 
 footer .first-line a {
@@ -78,6 +88,6 @@ footer .first-line a {
 }
 
 footer .second-line {
-    font-size: 7.5px;
+    font-size: 9px;
     color: #d4b53f;
 }

@@ -1,11 +1,12 @@
-let dd =  new Date().getDate();
-let mm =  new Date().getMonth() +1; 
-let yyy = new Date().getFullYear();
+let day     = new Date().getDate();
+let month   = new Date().getMonth() +1; 
+let year    = new Date().getFullYear();
+let hour    = new Date().getHours();
+let minutes = new Date().getMinutes(); 
+let seconds = new Date().getSeconds();
 
-let hrs =  new Date().getHours();
-let min =  new Date().getMinutes(); 
-let sec = new Date().getSeconds();
+// console.log(month)
 
-let formated_day_time = mm+'/'+dd+'/'+yyy+' '+ hrs+':'+min+':'+sec;
+let LastUpdate = month+'/'+day+'/'+year+' '+ hour+':'+minutes+':'+seconds;
 
-document.getElementById('LastUpdate').innerHTML = formated_day_time;
+document.getElementById('LastUpdate').innerHTML = LastUpdate;
