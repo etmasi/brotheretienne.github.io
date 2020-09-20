@@ -1,73 +1,80 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    background-color: #F2F2F2;
-  }
-  
-  #content {
-    background-color: #FFF9F9;
-    max-width: 50%;
-    margin: 100px auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+#content {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+header {
+    background: #643219;
+    color: #fcf8f2;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: relative;
     border-radius: 10px;
-  }
-  
-  header,
-  footer {
-    background-color: #040B4A;
+}
+
+header > img {
+    grid-column: 2/3;
+    position: absolute;
+    width: 70%;
+    justify-self: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 27px;
+    margin: 0;
+    padding: 0.7em 0.7em;
+    padding-right: 0;
+}
+
+main {
+   padding: 0 15px;
+   margin: 25px 0; 
+}
+
+main > h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+main ul {
+    padding: 0 30px;
+}
+
+main li {
+    font-size: 10px;
+    color: #C1C6CB;
+    margin: 3px 0;
+}
+
+footer {
+    background: #643219;
+    color: #fcf8f2;
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
-    color: white;
-  
-  }
-  
-  h1 {
-    font-family: 'Zilla Slab', serif;
-    font-size: 2.5em;
-  }
-  
-  img {
-    float: right;
-    margin-right: 10px;
-    border-radius: 8px;
-    box-shadow: -5px -5px 5px lightblue, 2px 2px 5px lightgrey;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  hr {
-    width: 60%;
-    border: 2px solid red;
-    margin-left: 0;
-  }
-  
-  a:hover{
-    color: red
-  }
-  
-  .BYUI {
-    color: white;
-  }
-  
-  .BYUI:hover{
-    color: yellow;
-  }
-  
-  .lastp {
-    color: yellow;
-  }
-  
-  @media screen and (max-width: 750px) {
-    #content {
-      max-width: 90%;
-      background-color: #FFF9F9;
-      margin: auto;
-    }
-  
-    img{
-      float: none;
-      display: block;
-      margin: auto;
-      margin-top: 20px;
-    }
-  }
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+footer .first-line {
+    font-size: 8.5px;
+}
+
+footer .first-line a {
+    color: #fcf8f2;
+}
+
+footer .second-line {
+    font-size: 7.5px;
+    color: #d4b53f;
+}
