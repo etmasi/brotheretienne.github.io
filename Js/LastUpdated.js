@@ -7,6 +7,6 @@ let seconds = new Date().getSeconds();
 
 // console.log(month)
 
-let LastUpdate = month+'/'+day+'/'+year+' '+ hour+':'+minutes+':'+seconds;
+let LastUpdated = month+'/'+day+'/'+year+' '+ hour+':'+minutes+':'+seconds;
 
-document.getElementById('LastUpdate').innerHTML = LastUpdate;
+document.getElementById('LastUpdated').innerHTML = LastUpdated;
