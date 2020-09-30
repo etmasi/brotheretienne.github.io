@@ -24,8 +24,12 @@ section{
   grid-template-columns: auto;
   grid-gap: 10px;
   justify-content: center;
-  padding: 15px 5px 15px 5px;
+  padding: 20px;
   margin: 15px;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 30px;
+  border-style: solid;
 }
 
 .address{
