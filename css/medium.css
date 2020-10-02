@@ -1,0 +1,42 @@
+
+header h1{
+  text-align: center;
+}
+
+
+main section{
+
+  background-color: rgb(143, 155, 89);
+  width: 270px;
+  
+
+}
+
+section{
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 30px;
+  border-style: solid;
+}
+
+.address{
+  display: inline;
+}
+@media(min-width: 520px){
+  main section {
+
+  }
+
+  .web1 {
+    /* margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px; */
+  }
+}
