@@ -1,30 +1,25 @@
-html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: springgreen;
+
+@media only screen and (min-width: 1024px) {
+
+
+header h1 {
+    font-size: 16px;
 }
-
-
     
 
 nav ul li{
-    display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     font-size: 30px;
     grid-template-rows: auto auto auto;
-    background-color: salmon;
-    border: 10px solid goldenrod;
-   
 
 }
 
- nav ul li{
+main {
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
 
-        display: inline;
-        
-    }
 
-ul{
 
-    text-align: center;
 }
