@@ -12,8 +12,7 @@ body {
     text-align: center;
 }*/
 
-h1,
-h2 {
+h1,h2 {
     font-family: 'Architects Daughter', cursive;
 }
 
@@ -29,9 +28,7 @@ header {
 
 /*.title {
     display: flex;
-    flex-direction: column;*/
-
-}
+    flex-direction: column;} */
 
 header img {
     height: 100px;
@@ -148,7 +145,7 @@ iframe {
     
 }
 
-.footer {
+footer {
     background-color: #19535f;
     font-size: 1.75em;
     color: #f0f3f5;
