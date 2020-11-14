@@ -1,32 +1,27 @@
-<!DOCTYPE html>>
+<!DOCTYPE html>
 <html lang="eng-US">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="progressive loading of images">
     <title> Leazy Loadiang Image</title>
-    <link  href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet"">
-     <link rel="stylesheet" href="css/small-7.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small-7.css">
 </head>
-    <body>
-        <h1> Progressive Loading Images</h1>
-        <picture>
-            <img src="images/Winter.jpg">
-        </picture>
-        <picture>
-            <img src="images/Fall.jpg">
-        </picture>
-        <picture>
-            <img src="images/Spring.jpg">
-        </picture>
-        <picture>
-            <img src="images/Summer.jpg">
-        </picture>
-        <picture>
-            <img src="images/tropical.jpg">
-        </picture>
-    </picture>
+<body>
+    <h1> Progressive Loading Images</h1>
+    <img src="images/placeholder.jpg" data-src="images/Winter.jpg">
 
+    <img src="images/placeholder.jpg" data-src="images/Fall.jpg"  >
 
-    </body>
+    <img src="images/placeholder.jpg" data-src="images/Spring.jpg">
+
+    <img src="images/placeholder.jpg" data-src="images/Summer.jpg">
+
+    <img src="images/placeholder.jpg" data-src="images/tropical.jpg">
+
+    <script src="js/lazyload.js"></script>
+    
+    
+</body>
 </html>
