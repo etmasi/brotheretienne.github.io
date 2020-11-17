@@ -19,4 +19,12 @@
     .weatherContain {
         left: 280px;
     }
+
+    nav ul.hide li {
+        display: block
+    }
+
+    nav button {
+        display: none
+    }
 }

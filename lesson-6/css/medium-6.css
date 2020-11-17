@@ -8,10 +8,6 @@
         font-size: 1.5em;
     }
 
-    nav button {
-        display: none;
-    }
-
     nav ul.hide {
         display: flex;
     }

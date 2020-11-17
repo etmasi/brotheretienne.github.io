@@ -6,13 +6,14 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="../favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/normalize-6.css">
         <link rel="stylesheet" type="text/css"    href="css/small-6.css">
         <link rel="stylesheet" type="text/css"    href="css/medium-6.css">
         <link rel="stylesheet"  type="text/css"    href="css/large-6.css">
     </head>
     <body>
+        <div id="msg"></div>
         <header>
             <picture>
             <img src="images/logo.png" alt="The world logo">
@@ -25,7 +26,6 @@
         <nav class="layout" >
             <ul id="primaryNav" class="hide">
                 <button onclick="toggleMenu()">&#9776;</button>
-                <li><a class="ham" href="#">&#9776; Menu</a></li>
                 <li><a href="#">Home</a></li>
                 <li class="active"><a href="">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
@@ -38,15 +38,19 @@
             <main>
                 <h1>Preston Idaho</h1>
                 <div class="heroContainer">
+                    <picture>
+                        <source media="(min-width: 72em)" srcset="images/landscapelarge.jpeg">
+                        <source media="(max-width: 32.5em)" srcset="images/landscapesmall.jpeg">    
                     <img class="heroImg" src="images/landscape.jpeg" alt="Town Across The Plains" />
+                </picture>
                     <section class="weatherContain">
                         <h2>Weather Summary</h2>
                         <hr>
-                        <p>Currently: Sunny</p>
-                        <p>High: 76 &deg;F</p>
-                        <p>Wind Chill: &deg;N/A</p>
-                        <p>Humidity: 69%</p>
-                        <p>Wind Speed: 5 mph</p>
+                        <p id="weather">Currently: </p>
+                        <p id="hightemp">High: </p>
+                        <p id="chill">Wind Chill: </p>
+                        <p id="humidity">Humidity: </p>
+                        <p id="wind">Wind Speed: </p>
                     </section>
                 </div>
                 <section class="forecast">
@@ -116,6 +120,8 @@
             </footer>
             <script src="js/toggleMenu.js"></script>
             <script src="js/message.js"></script>
+            <script src="js/windChill.js"></script>
+            <script src="js/main.js"></script>
         
         
         </body> 
