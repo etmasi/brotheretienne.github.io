@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How is the Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize-8.css">
+        <link rel="stylesheet" type="text/css"    href="css/small-8.css">
+        <link rel="stylesheet" type="text/css"    href="css/medium-8.css">
+        <link rel="stylesheet"  type="text/css"    href="css/large-8.css">
+    </head>
+    <body>
+        <div id="msg"></div>
+        <header>
+            <picture>
+            <img src="images/logo.png" alt="The world logo">
+        </picture>
+            <section class="headings">
+                <h1>Weather traveller</h1>
+                <div  class="h1p">Bad weather, Good weather</div>
+            </section>
+        </header>
+        <nav class="layout" >
+            <ul id="primaryNav" class="hide">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav> 
+        
+        <main>
+            <h1 class="storm-head">Weather Cues Storm Center</h1>
+            <form method="GET" action="thanks.html">
+              <fieldset>
+                <legend>Contact Information</legend>
+                <label>Full Name<br /><input type="text" name="name" pattern="[a-zA-Z ]{5,}" required></label><br />
+                <label>Email<br /><input type="email" name="email" placeholder="someone@mail.com"></label><br />
+                <label>Phone Number<br /><input type="tel" name="tel" placeholder="1234567890" required></label><br />
+                <label>Zip Code<br /><input type="number" name="zip" required></label><br />
+              </fieldset>
+              <fieldset>
+                <legend>Storm Information</legend>
+                <label>Storm Date<br/><input type="date" name="s-date"></label><br />
+        
+                <label>Storm Type<br/><input list="storm-types" name="s-type"></label><br />
+                <datalist id="storm-types">
+                  <option value="Flash Flood"></option>
+                  <option value="Hail"></option>
+                  <option value="Hurricane"></option>
+                  <option value="Thunderstorm"></option>
+                  <option value="Tornado"></option>
+                </datalist>
+        
+                <label>Storm Severity<br /><span id="s-val">5</span> <input type="range" name="severity" min="1" max="10" step="1" value="5" id="s-range"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label><br />
+        
+                <label>Storm Region<br/>
+                  <select name="s-region">
+                    <option value="" disabled>Select Region</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda-springs">Soda Springs</option>
+                    <option value="fish-haven">Fish Haven</option>
+                  </select></label><br />
+        
+                <div>User in-danger level</div>
+                  <label class="sbs"><input type="radio" name="danger"> Yes</label>
+                  <label class="sbs"><input type="radio" name="danger"> Maybe</label>
+                  <label class="sbs"><input type="radio" name="danger"> No</label><br />
+        
+        
+                <label>Additional information or comments<br />
+                  <textarea name="comments"></textarea>
+                </label>
+              </fieldset>
+              <input type="submit" value="Report Weather Event" class="submitBtn">
+            </form>
+        
+          </main>
+            <footer> 
+                &copy;The Drift Lodge | Attributions | Marakavi Sini Etienne
+                <br>
+                <span id="today">
+                    <script src="js/timeDate.js"></script>
+                </span>
+            </footer>
+            <script src="js/toggleMenu.js"></script>
+            <script src="js/message.js"></script>
+            <script src="js/windChill.js"></script>
+            <script src="js/lazyload.js"></script>
+        
+        
+        </body> 
+
+        </main>
+        
+    </body>
+</html>
