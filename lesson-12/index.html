@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>How is the Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="assets/css/normalize-9.css">
+  <link rel="stylesheet" href="assets/css/small-9.css">
+  <link rel="stylesheet" href="assets/css/medium-9.css">
+  <link rel="stylesheet" href="assets/css/large-9.css">
+</head>
+
+<body>
+  <div id="msg"></div>
+        <header>
+            <picture>
+            <img src="assets/images/logo.png" alt="The world logo">
+        </picture>
+            <section class="headings">
+                <h1>Weather traveller</h1>
+                <div  class="h1p">Bad weather, Good weather</div>
+            </section>
+        </header>
+        <nav class="layout" >
+            <ul id="primaryNav" class="hide">
+              <li>
+                <button onclick="toggleMenu()">&#9776;</button>
+              </li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston/preston.html">Preston</a></li>
+                <li><a href="soda-springs/soda-spring.html">Soda Springs</a></li>
+                <li><a href="fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li><a href="storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav> 
+
+  <main>
+    <main>
+      <h1>Welcome to Weather Season in Idaho</h1>
+      <div class="heroContainer">
+
+    <section class="towns">
+      <article class="town-odd">
+        <div class="town-text" >
+          <a href="#" id="preston"></a>
+        </div>
+        <a href="#">
+          <img src="assets/images/placeholder_horizontal.jpg" data-src="assets/images/preston.jpg" alt="Preston, Idaho">
+        </a>
+      </article>
+      <article class="town-even">
+        <div class="town-text">
+          <a href="construction.html" id="fish-haven"></a>
+        </div>
+        <a href="construction.html">
+          <img src="assets/images/placeholder_horizontal.jpg" data-src="assets/images/fish_haven.jpg" alt="Fish Haven, Idaho">
+        </a>
+      </article>
+
+      <article class="town-odd">
+        <div class="town-text">
+          <a href="construction.html"  id="soda-springs"></a>
+        </div>
+        <a href="construction.html">
+          <img src="assets/images/placeholder_horizontal.jpg" data-src="assets/images/soda_springs.jpg" alt="Soda Springs, Idaho">
+        </a>
+
+      </article>
+    </section>
+
+    <aside>
+      <h2>Local Events</h2>
+      <ul>
+       <li><a href="#">November 27, 2020 Thanksgiving Concert</a></li>
+       <li><a href="#">December 5, 2020 Christmas in the Park Opening day</a></li>
+       <li><a href="#">December 10,2020 Christmas Food Drive</a></li>
+      </ul>
+    </aside>
+
+  <section class="contactInfo">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23682.88491977302!2d-111.880325!3d42.099747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1582992501650!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""> 
+    </iframe>
+
+    <div class="info-container">
+        <h2>The Drift Lodge</h2>
+        <p>&#128205;4771 N Highway 20, Island Park </p>
+        <p>Preston, ID 83429-5097 </p>
+        <br>
+        <p>&#9742; 999-999-9999</p>
+        <p>&#127760;<a href="">www.booking.com</a></p>
+        <img class="social" src="assets/images/facebook.png" alt="Facebook icon" />
+        <img class="social" src="assets/images/pinterest.png" alt="Pinterest icon" />
+        <img class="social" src="assets/images/twitter.png" alt="Twitter icon" />
+        <img class="social" src="assets/images/Google.png"   alt="Google icon">
+    </div>
+    </section>
+
+
+</main>
+<footer> 
+&copy;The Drift Lodge | Attributions | Marakavi Sini Etienne
+<br>
+<span id="today">
+    <script src="assets/js/timeDate.js"></script>
+</span>
+</footer>
+  <script src="assets/js/toggleMenu.js"></script>
+  <script src="assets/js/message.js"></script>
+  <script src="assets/js/lazyload.js"></script>
+  <script src="assets/js/towns.js"></script>
+
+</body> 
+
+</html>

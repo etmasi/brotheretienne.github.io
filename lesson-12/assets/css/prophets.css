@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300&display=swap');
+
+section {
+  border: .2rem solid rgba(11, 122, 117, 0.6);
+  padding: 1em;
+  color: #000;
+  margin: .2rem;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+h2{
+  font-size: 1.75em;
+}
+
+section img {
+  box-shadow: 5px 5px 15px black;
+  max-height: 50vw;
+}
+
+section:hover {
+  border: .2rem solid #0b7a75;
+  background-color: #f0f3f5;
+}
+
+@media screen and (min-width: 35em) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section img{
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  section img{
+    max-width: 90%;
+  }
+}
