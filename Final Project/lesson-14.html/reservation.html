@@ -4,37 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this service help the clients to book appointmens for the scooters">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css"    href="css/small.css">
-    <link rel="stylesheet" type="text/css"    href="css/medium.css">
-    <link rel="stylesheet"  type="text/css"    href="css/large.css">
+    <link rel="stylesheet" href="assets/css/normalize-9.css">
+    <link rel="stylesheet" href="assets/css/small-9.css">
+    <link rel="stylesheet" href="assets/css/medium-9.css">
+    <link rel="stylesheet" href="assets/css/large-9.css">
+  </head>
 </head>
 
 <body onload="lastUpdate()">
     <div id="msg"></div>
     <header>
-        <img src="images/scooter-eletrico.png" alt="Scoots Logo">
+        <img src="images/scoot.jpg" alt="Scoots Logo">
         <div>
           <h3>Scoots</h3>
-          <span class="catchPhrase">Just Do It</span>
+          <span class="motto">Just Do It</span>
         </div>
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
     </header>
     <nav class="layout" >
         <ul id="primaryNav" class="hide">
             <button onclick="toggleMenu()">&#9776;</button>
             <li><a href="index.html">Menu</a></li>
-            <li class="home.html" ><a href="">Home</a></li>
+            <li href="home.html" ><a href="">Home</a></li>
             <li><a href="tours.html">Tours</a></li>
             <li><a href="bookings.html">Bookings</a></li>
             <li><a href="reservation.html">reservations</a></li>
-            <li><a class="contacts.html" href="">contacts</a></li>
+            <li><a href="contacts.html" href="">contacts</a></li>
         </ul>
     </nav> 
     
