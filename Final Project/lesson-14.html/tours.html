@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How is the Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css"    href="css/small.css">
+        <link rel="stylesheet" type="text/css"    href="css/medium.css">
+        <link rel="stylesheet"  type="text/css"    href="css/large.css">
+    </head>
+    
+    <body onload="lastUpdate()">
+        <header>
+            <img src="images/scooter-eletrico.png" alt="Scoots Logo">
+            <div>
+              <h3>Scoots</h3>
+              <span class="catchPhrase">Get there fast anywhere</span>
+            </div>
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
+            <label for="navi-toggle" class="navigation__button">
+              <span class="navigation__icon">&nbsp;</span>
+            </label>
+          </header>   
+
+          <main>
+            <nav class="layout" >
+                <ul id="primaryNav" class="hide">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                    <li><a href="index.html">Menu</a></li>
+                    <li class="home.html" ><a href="">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="reservations">reservations</a></li>
+                    <li><a class="contacts" href="">contacts</a></li>
+                </ul>
+            </nav> 
+              <div>
+              <img src="" alt>
+              </div>
+              <section class="tours">
+              <div class="tours-frame">
+                  <div>
+                      <h3 style="color:indigo; margin: 6px">Island Incursion</h3>
+                  </div>
+                  <img src="" alt="">
+              </div>
+              <div>
+                  <p>
+                    A piece of of article need to be written here
+                  </p>
+              </div>
+              <div class="tours-frame"></div>
+              <div>
+                  <h3 style="color:red"; >Something need to be written here</h3>
+              </div>
+              <div>
+              <p>A parahraph is needed here</p>
+              </div>
+            </section>
+          </main>
+          <footer> 
+            &copy;Weste| Attributions | Marakavi Sini Etienne
+            <br>
+            <span id="today">
+                <script src="js/timeDate.js"></script>
+            </span>
+        </footer>
+        <script src="js/toggleMenu.js"></script>
+        <script src="js/message.js"></script>
+        <script src="js/windChill.js"></script>
+        <script src="js/lazyload.js"></script>
+    
+</body>
+</html>
