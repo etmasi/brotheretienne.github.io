@@ -6,17 +6,24 @@
     <meta name="description" content="this service help the clients to book appointmens for the scooters">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css"    href="css/small.css">
+    <link rel="stylesheet" type="text/css"    href="css/medium.css">
+    <link rel="stylesheet"  type="text/css"    href="css/large.css">
 </head>
 
 <body onload="lastUpdate()">
     <header>
-        <picture>
-        <img src="images/scoot.png" alt="logo scoot">
-    </picture>
-        <section class="headings">
-            <h1>Renting Business</h1>
-            <div  class="h1p">Just Do It.</div>
-        </section>
+        <img src="images/scooter-eletrico.png" alt="Scoots Logo">
+        <div>
+          <h3>Scoots</h3>
+          <span class="catchPhrase">Get there fast anywhere</span>
+        </div>
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="onChange()">
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
     </header>
     <nav class="layout" >
         <ul id="primaryNav" class="hide">
@@ -25,8 +32,8 @@
             <li class="home.html" ><a href="">Home</a></li>
             <li><a href="tours.html">Tours</a></li>
             <li><a href="bookings.html">Bookings</a></li>
-            <li><a href="reservations">reservations</a></li>
-            <li><a class="contacts" href="">contacts</a></li>
+            <li><a href="reservation.html">reservations</a></li>
+            <li><a class="contacts.html" href="">contacts</a></li>
         </ul>
     </nav> 
     
@@ -59,9 +66,24 @@
                 <legend>vehicle Type</legend>
                 <label>Reservation Date<br/>
                   <input type="date" name="bday"></label><br />
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2404787512396!2d-111.87814418517708!3d42.102320259332714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7edf5a87e55%3A0x3522bb0117d31f6c!2s296%20N%20State%20St%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sza!4v1608465724471!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""> 
+                  </iframe>
+                  <div class="info-container">
+                    <h2>West Motor Company</h2>
+                    <p>&#128205;296 North State Street </p>
+                    <p>Preston, ID 83263-1168 </p>
+                    <br>
+                    <p>&#9742;208-904-3278 </p>
+                    <p>&#127760;<a href="https://www.booking.com/ ">www.booking.com</a></p>
+                    <img class="social" src="assets/images/facebook.png" alt="Facebook icon" />
+                    <img class="social" src="assets/images/pinterest.png" alt="Pinterest icon" />
+                    <img class="social" src="assets/images/twitter.png" alt="Twitter icon" />
+                    <img class="social" src="assets/images/Google.png"   alt="Google icon">
+                </div>
+                </section>
     </main>
     <footer> 
-        &copy;West| Attributions | Marakavi Sini Etienne
+        &copy;West Motor Company| Attributions | Marakavi Sini Etienne
         <br>
         <span id="today">
             <script src="assets/js/timeDate.js"></script>
