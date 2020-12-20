@@ -7,19 +7,19 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico">
-        <link rel="stylesheet" href="assets/css/normalize-9.css">
-        <link rel="stylesheet" href="assets/css/small-9.css">
-        <link rel="stylesheet" href="assets/css/medium-9.css">
-        <link rel="stylesheet" href="assets/css/large-9.css">
+        <link rel="stylesheet" href="../css/normalize-9.css">
+        <link rel="stylesheet" href="../css/small-9.css">
+        <link rel="stylesheet" href="../css/medium-9.css">
+        <link rel="stylesheet" href="../css/large-9.css">
       </head>
     </head>
     <body onload="lastUpdate()">
         <header>
             <picture>
-            <img src="images/scoot.png" alt="logo scoot">
+            <img src="../images/scoot.png" alt="logo scoot">
         </picture>
             <section class="headings">
-                <h1>Renting Business</h1>
+                <h1>Driving Scooters</h1>
                 <div  class="h1p">Just Do It.</div>
             </section>
         </header>
@@ -27,7 +27,7 @@
             <ul id="primaryNav" class="hide">
                 <button onclick="toggleMenu()">&#9776;</button>
                 <li><a href="index.html">Menu</a></li>
-                <li><a href="home.html" >Home</li>
+                <li><a href="index.html">Home</li>
                 <li><a href="tours.html">Tours</a></li>
                 <li><a href="bookings.html">Bookings</a></li>
                 <li><a href="reservation.html">reservations</a></li>
@@ -38,9 +38,9 @@
             <h1>scooters</h1>
             <div class="heroContainer">
                 <picture>
-                    <source media="(min-width: 72em)" srcset="images/girlmoto.jpg">
-                    <source media="(max-width: 32.5em)" srcset="images/girlmoto.jpg">    
-                <img class="heroImg" src="images/girlmoto.jpg" alt="girldwithmoto" />
+                    <source media="(min-width: 52em)" srcset="../images/girlmoto.jpg">
+                    <source media="(max-width: 32.5em)" srcset="../images/girlmoto.jpg">
+                <img class="heroImg" src="../images/girlmoto.jpg" alt="girldwithmoto" />
             
                 <section class="weatherContain">
                     <p style="text-trasform: capitalize">Humidity</p>
@@ -49,9 +49,9 @@
                  
                 </section class="photo">
                 <picture>
-                    <source media="(min-width: 950px)" srcset="images/hero-image-large.jpg"> 
-                         <source media="(min-width: 768px)" srcset="images/hero-image-medium.jpg"> 
-                            <img src="images/hero-image-small.jpg" alt="Hero Image">
+                    <source media="(min-width: 950px)" srcset="../images/hero-image-large.jpg"> 
+                         <source media="(min-width: 768px)" srcset="../images/hero-image-medium.jpg"> 
+                            <img src="../images/hero-image-small.jpg" alt="Hero Image">
                 </picture>
                 
                 <button>Rent our scooters </button>
@@ -65,29 +65,29 @@
                 <h2>5 day Forecast</h2>
                 <div class="flex">
                     <div class="column">
-                        <span class="day">SUNDAY</span>
-                        <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">87&deg;F</span>
-                    </div>
-                    <div class="column">
                         <span class="day">MONDAY</span>
                         <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">91&deg;F</span>
+                        <span class="temp">59&deg;F</span>
                     </div>
                     <div class="column">
                         <span class="day">TUESDAY</span>
                         <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">84&deg;F</span>
+                        <span class="temp">61&deg;F</span>
                     </div>
                     <div class="column">
                         <span class="day">WEDNESDAY</span>
                         <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">80&deg;F</span>
+                        <span class="temp">81&deg;F</span>
                     </div>
                     <div class="column">
                         <span class="day">THURSDAY</span>
                         <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">83&deg;F</span>
+                        <span class="temp">85&deg;F</span>
+                    </div>
+                    <div class="column">
+                        <span class="day">FRIDAY</span>
+                        <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
+                        <span class="temp">94&deg;F</span>
                     </div>   
                 
             </section>
@@ -130,10 +130,10 @@ Rentals may be returned to either location.
                     <br>
                     <p>&#9742;  208-904-3278</p>
                     <p>&#127760;<a href="">www.booking.com</a></p>
-                    <img class="social" src="images/facebook.png" alt="Facebook icon" />
-                    <img class="social" src="images/pinterest.png" alt="Pinterest icon" />
-                    <img class="social" src="images/twitter.png" alt="Twitter icon" />
-                    <img class="social" src="images/Google.png"   alt="Google icon">
+                    <img class="social" src="../images/facebook.png" alt="Facebook icon" />
+                    <img class="social" src="../images/pinterest.png" alt="Pinterest icon" />
+                    <img class="social" src="../images/twitter.png" alt="Twitter icon" />
+                    <img class="social" src="../images/Google.png"   alt="Google icon">
                 </div>
                 </section>
         </main>
@@ -141,13 +141,15 @@ Rentals may be returned to either location.
                 &copy;West Motor Company | Attributions | Marakavi Sini Etienne
                 <br>
                 <span id="today">
-                    <script src="js/timeDate.js"></script>
+                    <script src="../js/timeDate.js"></script>
                 </span>
             </footer>
-            <script src="js/toggleMenu.js"></script>
-            <script src="js/message.js"></script>
-            <script src="js/windChill.js"></script>
-            <script src="js/lazyload.js"></script>
+            <script src="../js/toggleMenu.js"></script>
+            <script src="../js/message.js"></script>
+            <script src="../js/windChill.js"></script>
+            <script src="../js/lazyload.js"></script>
+            <script src="../js/webfont_loader.js"></script>
+            <script src="js/LastUpdated.js"></script>
 
         </main>
         
