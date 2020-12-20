@@ -8,17 +8,4 @@ footer{
     grid-row: auto;
     grid-template-columns: auto;
 }
-footer,update,address {
-    background: #643219;
-    color: #fcf8f2;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 20px;
-}
-.update{
-margin-bottom: -20px;
-}
 
-  
