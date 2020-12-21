@@ -1,28 +1,24 @@
 @media only screen and (min-width: 72em) {
     header {
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .title {
         font-size: 2.5rem;
     }
 
-    header img {
-        height: 200px;
-        width: auto;
-    }
-
-    .heroImg {
-        width: 1300px;
+    .hero-img {
+      margin-top: -1173px;
     }
 
     .weatherContain {
-        left: 280px;
+        /* left: 280px; */
     }
 
     nav ul.hide li {
         display: block
     }
+    
 
     nav button {
         display: none

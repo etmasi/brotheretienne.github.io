@@ -1,157 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My scooter, my life</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="../favicon.ico">
-        <link rel="stylesheet" href="../css/normalize-9.css">
-        <link rel="stylesheet" href="../css/small-9.css">
-        <link rel="stylesheet" href="../css/medium-9.css">
-        <link rel="stylesheet" href="../css/large-9.css">
-      </head>
-    </head>
-    <body onload="lastUpdate()">
-        <header>
-            <picture>
+
+<head>
+    <title>My scooter, my life</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/normalize-9.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/small-9.css">
+    <link rel="stylesheet" href="../css/medium-9.css">
+    <link rel="stylesheet" href="../css/large-9.css">
+</head>
+
+<body>
+    <header>
+        <picture>
             <img src="../images/scoot.png" alt="logo scoot">
         </picture>
-            <section class="headings">
-                <h1>Driving Scooters</h1>
-                <div  class="h1p">Just Do It.</div>
-            </section>
-        </header>
-        <nav class="layout" >
-            <ul id="primaryNav" class="hide">
-                <button onclick="toggleMenu()">&#9776;</button>
-                <li><a href="index.html">Menu</a></li>
-                <li><a href="index.html">Home</li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="bookings.html">Bookings</a></li>
-                <li><a href="reservation.html">reservations</a></li>
-                <li><a href="contacts.html" >contacts</a></li>
-            </ul>
-        </nav> 
-        <main>
-            <h1>scooters</h1>
-            <div class="heroContainer">
-                <picture>
-                    <source media="(min-width: 52em)" srcset="../images/girlmoto.jpg">
-                    <source media="(max-width: 32.5em)" srcset="../images/girlmoto.jpg">
-                <img class="heroImg" src="../images/girlmoto.jpg" alt="girldwithmoto" />
-            
+        <section class="headings">
+            <h1>Driving Scooters</h1>
+            <div class="h1p">Just Do It.</div>
+        </section>
+    </header>
+    <nav class="layout">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="reservation.html">reservations</a></li>
+            <li><a href="contacts.html">contacts</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="heroContainer">
+            <picture>
+                <source media="(min-width: 52em)" srcset="../images/girlmoto.jpg">
+                <source media="(max-width: 32.5em)" srcset="../images/girlmoto.jpg">
+                <img class="hero-img" src="../images/girlmoto.jpg" alt="girldwithmoto" />
+
                 <section class="weatherContain">
-                    <p style="text-trasform: capitalize">Humidity</p>
+                    <p>Humidity</p>
                     <p> temperature:21 ºF</p>
                     <p>92 %</p>
-                 
+
                 </section class="photo">
-                <picture>
-                    <source media="(min-width: 950px)" srcset="../images/hero-image-large.jpg"> 
-                         <source media="(min-width: 768px)" srcset="../images/hero-image-medium.jpg"> 
-                            <img src="../images/hero-image-small.jpg" alt="Hero Image">
-                </picture>
-                
-                <button>Rent our scooters </button>
+            </picture>
 
-                <section id="">
+            <button>Rent our scooters </button>
 
-                </section>
-            </div>
-            
-            <section class="forecast">
-                <h2>5 day Forecast</h2>
-                <div class="flex">
-                    <div class="column">
-                        <span class="day">MONDAY</span>
-                        <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">59&deg;F</span>
-                    </div>
-                    <div class="column">
-                        <span class="day">TUESDAY</span>
-                        <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">61&deg;F</span>
-                    </div>
-                    <div class="column">
-                        <span class="day">WEDNESDAY</span>
-                        <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">81&deg;F</span>
-                    </div>
-                    <div class="column">
-                        <span class="day">THURSDAY</span>
-                        <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">85&deg;F</span>
-                    </div>
-                    <div class="column">
-                        <span class="day">FRIDAY</span>
-                        <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
-                        <span class="temp">94&deg;F</span>
-                    </div>   
-                
+            <section id="">
+
             </section>
+        </div>
 
-            <section class="rental-info">
-                <h1>Rental Information </h1>
-
-                <h3>Type of Rentals</h3>
-
-                <p>Honda Motor Scooters
-Honda Metropolitan (49cc) - 1 person
-Honda Dio (110cc) - 2 person
-Honda PCX150 (149cc) - 2 person
-ATV Side-by-Side
-Honda Pioneer 1000
-Jeep Rentals
-4-door Jeep Wrangler - manual with A/C - 5 people max
-2-door Jeep Wrangler - open air - manual - 4 people max
-Information and Services
-
-A $50 security deposit is required to confirm reservations.
-A valid drivers license is required in hand at time of rental.
-No one under 12 years of age are allowed to ride on the scooters.
-Fuel charge not included.
-Unlimited mileage.
-Liability insurance is free of charge.
-Reservations rate requires 24 hour prior notification.
-Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
-Payment via Google Pay, cash, credit card, debit card, or PayPal.
-Rentals may be returned to either location.
-                                </p>
-            </section>
-            <section class="contactInfo">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2404787512396!2d-111.87814418517708!3d42.102320259332714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7edf5a87e55%3A0x3522bb0117d31f6c!2s296%20N%20State%20St%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sza!4v1608465724471!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-                <div class="info-container">
-                    <h2>Western Motor</h2>
-                    <p>&#128205;296 North State Street </p>
-                    <p> Preston, ID 83263-1168</p>
-                    <br>
-                    <p>&#9742;  208-904-3278</p>
-                    <p>&#127760;<a href="">www.booking.com</a></p>
-                    <img class="social" src="../images/facebook.png" alt="Facebook icon" />
-                    <img class="social" src="../images/pinterest.png" alt="Pinterest icon" />
-                    <img class="social" src="../images/twitter.png" alt="Twitter icon" />
-                    <img class="social" src="../images/Google.png"   alt="Google icon">
+        <section class="forecast">
+            <h2>5 day Forecast</h2>
+            <div class="flex">
+                <div class="column">
+                    <span class="day">MONDAY</span>
+                    <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
+                    <span class="temp">59&deg;F</span>
                 </div>
-                </section>
-        </main>
-            <footer> 
-                &copy;West Motor Company | Attributions | Marakavi Sini Etienne
-                <br>
-                <span id="today">
-                    <script src="../js/timeDate.js"></script>
-                </span>
-            </footer>
-            <script src="../js/toggleMenu.js"></script>
-            <script src="../js/message.js"></script>
-            <script src="../js/windChill.js"></script>
-            <script src="../js/lazyload.js"></script>
-            <script src="../js/webfont_loader.js"></script>
-            <script src="js/LastUpdated.js"></script>
+                <div class="column">
+                    <span class="day">TUESDAY</span>
+                    <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
+                    <span class="temp">61&deg;F</span>
+                </div>
+                <div class="column">
+                    <span class="day">WEDNESDAY</span>
+                    <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
+                    <span class="temp">81&deg;F</span>
+                </div>
+                <div class="column">
+                    <span class="day">THURSDAY</span>
+                    <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
+                    <span class="temp">85&deg;F</span>
+                </div>
+                <div class="column">
+                    <span class="day">FRIDAY</span>
+                    <img src="https://openweathermap.org/img/w/13d.png" alt="Sun">
+                    <span class="temp">94&deg;F</span>
+                </div>
 
-        </main>
-        
-    </body>
+        </section>
+
+        <section class="rental-info">
+            <h1>Rental Information </h1>
+
+            <h3>Type of Rentals</h3>
+
+            <p>Honda Motor Scooters
+                Honda Metropolitan (49cc) - 1 person
+                Honda Dio (110cc) - 2 person
+                Honda PCX150 (149cc) - 2 person
+                ATV Side-by-Side
+                Honda Pioneer 1000
+                Jeep Rentals
+                4-door Jeep Wrangler - manual with A/C - 5 people max
+                2-door Jeep Wrangler - open air - manual - 4 people max
+                Information and Services
+
+                A $50 security deposit is required to confirm reservations.
+                A valid drivers license is required in hand at time of rental.
+                No one under 12 years of age are allowed to ride on the scooters.
+                Fuel charge not included.
+                Unlimited mileage.
+                Liability insurance is free of charge.
+                Reservations rate requires 24 hour prior notification.
+                Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                Payment via Google Pay, cash, credit card, debit card, or PayPal.
+                Rentals may be returned to either location.
+            </p>
+        </section>
+        <section class="contactInfo">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2404787512396!2d-111.87814418517708!3d42.102320259332714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7edf5a87e55%3A0x3522bb0117d31f6c!2s296%20N%20State%20St%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sza!4v1608465724471!5m2!1sen!2sza"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+
+            <div class="info-container">
+                <h2>Western Motor</h2>
+                <p>&#128205;296 North State Street </p>
+                <p> Preston, ID 83263-1168</p>
+                <br>
+                <p>&#9742; 208-904-3278</p>
+                <p>&#127760;<a href="">www.booking.com</a></p>
+                <img class="social" src="../images/facebook.png" alt="Facebook icon" />
+                <img class="social" src="../images/pinterest.png" alt="Pinterest icon" />
+                <img class="social" src="../images/twitter.png" alt="Twitter icon" />
+                <img class="social" src="../images/Google.png" alt="Google icon">
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;West Motor Company | Attributions | Marakavi Sini Etienne
+        <br>
+        <span id="LastUpdated">
+            <script src="../js/timeDate.js"></script>
+        </span>
+    </footer>
+    <script src="../js/toggleMenu.js"></script>
+    <script src="../js/message.js"></script>
+    <script src="../js/windChill.js"></script>
+    <script src="../js/lazyload.js"></script>
+
+</body>
+
+</html>ody>
 </html>

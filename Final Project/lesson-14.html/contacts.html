@@ -1,99 +1,105 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>My scooter, my life</title>S
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="../favicon.ico">
-        <link rel="stylesheet" href="assets/css/normalize-9.css">
+
+<head>
+  <title>My scooter, my life</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/normalize-9.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/small-9.css">
   <link rel="stylesheet" href="../css/medium-9.css">
   <link rel="stylesheet" href="../css/large-9.css">
 </head>
-    </head>
-    <body onload="lastUpdate()">
-        <div id="msg"></div>
-        <header>
-            <picture>
-            <img src="../images/scoot.jpg" alt="logo scoot">
-        </picture>
-            <section class="headings">
-                <h1>Renting Business</h1>
-                <div  class="h1p">Just Do It.</div>
-            </section>
-        </header>
-        <nav class="layout" >
-            <ul id="primaryNav" class="hide">
-                <button onclick="toggleMenu()">&#9776;</button>
-                <li><a href="index.html">Menu</a></li>
-                <li href="home.html" ><a href="">Home</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <li><a href="bookings.html">Bookings</a></li>
-                <li><a href="reservation.html">reservations</a></li>
-                <li><a href="contacts.html" href="">contacts</a></li>
-            </ul>
-            </nav>
-            <main>
-             <div class="contact-container">
-            <h1>Contact Us:</h1>
-            <p>
-                    Whether this is the first time you're on our website, or you're planning another adventure in Cozumel we want
-                    to hear from you. Let us know what you think we can do better and feel free to ask us any questions you might
-                    have about our services. Getting a hold of us is as easy as writing us an email or giving us a call. If those
-                    don't work for you, feel free to use the form below and we'll get back to you.
-           </p>
-           </div>
-           <h1 class="storm-head">Personal Information</h1>
-           <form method="GET" action="thanks.html">
-             <fieldset>
-               <legend>Contact Information</legend>
-               <label>Full Name<br />
-                 <input type="text" name="name" value placeholder=" Full name" pattern="[a-zA-Z ]{5,}" required></label><br />
-               <label>Email<br />
-                 <input type="email" name="email" value placeholder="email@gmail.com" pattern="[a-z0-9._%+-]@[a-z0-9.-]+\.[a-z]${3,99}"></label><br />
-               <label>Phone Number<br />
-                 <input type="tel" name="phone" value placeholder="1234567890" required></label><br />
-               <label>Zip Code<br />
-                 <input type="number" name="zip"  value placeholder="2198" required></label><br />
-             </fieldset>
-             <fieldset>
-             
-                 <label>Message:<br />
-                    <textarea name="comments" cols="40" rows="10"></textarea>
-                  </label>
-                </fieldset>
-                <input type="submit" value="Submit" class="submitBtn" formaction="thanks.html">
-              </form>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2404787512396!2d-111.87814418517708!3d42.102320259332714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7edf5a87e55%3A0x3522bb0117d31f6c!2s296%20N%20State%20St%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sza!4v1608465724471!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""> 
-              </iframe>
-              <div class="info-container">
-                <h2>West Motor Compan</h2>
-                <p>&#128205;296 North State Street </p>
-                <p>Preston, ID 83263-1168 </p>
-                <br>
-                <p>&#9742; 208-904-3278</p>
-                <p>&#127760;<a href="https://www.booking.com/ ">www.booking.com</a></p>
-                <img class="social" src="../images/facebook.png" alt="Facebook icon" />
-                <img class="social" src="../images/pinterest.png" alt="Pinterest icon" />
-                <img class="social" src="../images/twitter.png" alt="Twitter icon" />
-                <img class="social" src="../images/Google.png"   alt="Google icon">
-            </div>
-            </section>
-            </main>
-            <footer> 
-                &copy; West Motor Company | Attributions | Marakavi Sini Etienne
-                <br>
-                <span id="today">
-                    <script src="../js/timeDate.js"></script>
-                </span>
-            </footer>
-            <script src="../js/toggleMenu.js"></script>
-            <script src="../js/message.js"></script>
-            <script src="../js/windChill.js"></script>
-            <script src="../js/lazyload.js"></script>
-        
-    </body>
 
-            </html>
+<body>
+  <header>
+    <picture>
+      <img src="../images/scoot.png" alt="logo scoot">
+    </picture>
+    <section class="headings">
+      <h1>Driving Scooters</h1>
+      <div class="h1p">Just Do It.</div>
+    </section>
+  </header>
+  <nav class="layout">
+    <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="tours.html">Tours</a></li>
+      <li><a href="bookings.html">Bookings</a></li>
+      <li><a href="reservation.html">reservations</a></li>
+      <li><a href="contacts.html">contacts</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="contact-container">
+      <h1>Contact Us:</h1>
+      <p>
+        Whether this is the first time you're on our website, or you're planning another adventure in Cozumel we want
+        to hear from you. Let us know what you think we can do better and feel free to ask us any questions you might
+        have about our services. Getting a hold of us is as easy as writing us an email or giving us a call. If those
+        don't work for you, feel free to use the form below and we'll get back to you.
+      </p>
+    </div>
+    <h1 class="storm-head">Personal Information</h1>
+    <form method="GET" action="thanks.html">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label>Full Name<br />
+          <input type="text" name="name" value placeholder=" Full name" pattern="[a-zA-Z ]{5,}" required></label><br />
+        <label>Email<br />
+          <input type="email" name="email" value placeholder="email@gmail.com"
+            pattern="[a-z0-9._%+-]@[a-z0-9.-]+\.[a-z]${3,99}"></label><br />
+        <label>Phone Number<br />
+          <input type="tel" name="phone" value placeholder="1234567890" required></label><br />
+        <label>Zip Code<br />
+          <input type="number" name="zip" value placeholder="2198" required></label><br />
+      </fieldset>
+      <fieldset>
+
+        <label>Message:<br />
+          <textarea name="comments" cols="40" rows="10"></textarea>
+        </label>
+        <input type="submit" value="Submit" class="submitBtn" formaction="thanks.html">
+      </fieldset>
+    </form>
+
+    <section class="contactInfo" margin="30px">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.2404787512396!2d-111.87814418517708!3d42.102320259332714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7edf5a87e55%3A0x3522bb0117d31f6c!2s296%20N%20State%20St%2C%20Preston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2sza!4v1608465724471!5m2!1sen!2sza"
+      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+    </iframe>
+    <div class="info-container">
+      <h2>West Motor Compan</h2>
+      <p>&#128205;296 North State Street </p>
+      <p>Preston, ID 83263-1168 </p>
+      <br>
+      <p>&#9742; 208-904-3278</p>
+      <p>&#127760;<a href="https://www.booking.com/ ">www.booking.com</a></p>
+      <img class="social" src="../images/facebook.png" alt="Facebook icon" />
+      <img class="social" src="../images/pinterest.png" alt="Pinterest icon" />
+      <img class="social" src="../images/twitter.png" alt="Twitter icon" />
+      <img class="social" src="../images/Google.png" alt="Google icon">
+    </div>
+  </section>
+  </main>
+  <footer>
+    &copy;West Motor Company | Attributions | Marakavi Sini Etienne
+    <br>
+    <span id="LastUpdated">
+      <script src="../js/timeDate.js"></script>
+    </span>
+  </footer>
+  <script src="../js/toggleMenu.js"></script>
+  <script src="../js/message.js"></script>
+  <script src="../js/windChill.js"></script>
+  <script src="../js/lazyload.js"></script>
+
+</body>
+
+</html>

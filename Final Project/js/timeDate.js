@@ -1,4 +1,12 @@
-var now = new lastUpdate();
-var Weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
-var Month = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-document.write(Weekday[now.getDay()] + ", " + Month[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear());
+let day     = new Date().getDate();
+let month   = new Date().getMonth() +1; 
+let year    = new Date().getFullYear();
+let hour    = new Date().getHours();
+let minutes = new Date().getMinutes(); 
+let seconds = new Date().getSeconds();
+
+// console.log(month)
+
+let LastUpdated = month+'/'+day+'/'+year+' '+ hour+':'+minutes+':'+seconds;
+
+document.getElementById('LastUpdated').innerHTML = LastUpdated;
