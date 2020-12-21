@@ -181,3 +181,11 @@ footer {
     max-width: 400px;
     margin: 0 auto;
   }
+
+  .summer{
+      text-emphasis-position:left;
+  }
+
+  .tours-frame{
+    text-align: left;
+  }
