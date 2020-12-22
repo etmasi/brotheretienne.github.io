@@ -196,6 +196,14 @@ footer {
 
 }
 
-  
+.tours{
+
+    padding: 0px;
+    color: auto;
+    display:grid;
+    margin-bottom: auto;
+    border-style: solid;
+    }
+     
 
 
