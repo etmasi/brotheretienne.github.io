@@ -120,3 +120,6 @@
     display: flexbox;
 
 }
+.description{
+border-style: solid;
+}

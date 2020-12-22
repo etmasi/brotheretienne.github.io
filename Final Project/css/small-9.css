@@ -187,8 +187,14 @@ footer {
   }
 
   .description{
-      display: flexbox;
-  }
+   
+    padding: 0px;
+    color: auto;
+    display:grid;
+    margin-bottom: auto;
+    
+
+}
 
   
 
