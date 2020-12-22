@@ -1,0 +1,119 @@
+!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css"    href="css/small.css">
+    <link rel="stylesheet" type="text/css"    href="css/medium.css">
+    <link rel="stylesheet"  type="text/css"    href="css/large.css">
+</head>
+<body>
+    <div id="msg"></div>
+    <header>
+        <picture>
+        <img src="images/logo.png" alt="SCOOT">
+    </picture>
+        <section class="headings">
+            <h1>Weather traveller</h1>
+            <div  class="h1p">Bad weather, Good weather</div>
+        </section>
+    </header>
+    <nav class="layout" >
+        <ul id="primaryNav" class="hide">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <li><a href="#">Home</a></li>
+            <li class="active" ><a href="">RENTAL</a></li>
+            <li><a href="#">RESERVATION</a></li>
+            <li><a href="#">TOURS</a></li>
+            <li><a href="lesson-8/stormcenter.html">CONTACT</a></li>
+            <li><a class="active" href="">Gallery</a></li>
+        </ul>
+    </nav> 
+    
+        <main>
+            <h1>Weather Gallery</h1>
+            <div class="img-container">
+                <div class="img-box">
+                  <picture>
+                    <img src="images/placeholder.jpg" data-src="images/Winter-Idaho.jpg"
+                      alt="Winter in Idaho.">
+          
+                  </picture>
+                  <p>Winter.</p>
+                </div>
+                <div class="img-box">
+                  <picture>
+                    <img src="images/placeholder.jpg" data-src="images/Fall-Idaho.jpg"
+                      alt="Fall in Idaho.">
+                  </picture>
+                  <p>Fall season.</p>
+                </div>
+                <div class="img-box">
+                  <picture>
+                    <img src="images/placeholder.jpg" data-src="images/Spring-Idaho.jpg"
+                      alt="Spring.">
+          
+                  </picture>
+                  <p>Yellow River, China.</p>
+                </div>
+                <div class="img-box">
+                  <picture>
+                    <img src="images/placeholder.jpg" data-src="images/Summer-Idaho.jpg"
+                      alt=" Summertime in Idaho">
+          
+                  </picture>
+                  <p>Summer.</p>
+                </div>
+                <div class="img-box">
+                  <picture>
+                    <img src="images/placeholder.jpg" data-src="images/Thunderstorm.jpg"
+                      alt="Thunder.">
+          
+                  </picture>
+                  <p>Thunder in Idaho.</p>
+                </div>
+              </div>
+            <section class="contactInfo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23682.88491977302!2d-111.880325!3d42.099747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1582992501650!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""> 
+                </iframe>
+
+                <div class="info-container">
+                    <h2>The Drift Lodge</h2>
+                    <p>&#128205;4771 N Highway 20, Island Park </p>
+                    <p>Preston, ID 83429-5097 </p>
+                    <br>
+                    <p>&#9742; 999-999-9999</p>
+                    <p>&#127760;<a href="">www.booking.com</a></p>
+                    <img class="social" src="images/facebook.png" alt="Facebook icon" />
+                    <img class="social" src="images/pinterest.png" alt="Pinterest icon" />
+                    <img class="social" src="images/twitter.png" alt="Twitter icon" />
+                    <img class="social" src="images/Google.png"   alt="Google icon">
+                </div>
+                </section>
+    
+    
+        </main>
+        <footer> 
+            &copy;The Drift Lodge | Attributions | Marakavi Sini Etienne
+            <br>
+            <span id="today">
+                <script src="js/timeDate.js"></script>
+            </span>
+        </footer>
+        <script src="js/toggleMenu.js"></script>
+        <script src="js/message.js"></script>
+        <script src="js/windChill.js"></script>
+        <script src="js/lazyload.js"></script>
+    
+    
+    </body> 
+
+    </main>
+    
+</body>
+</html>
+</html>
