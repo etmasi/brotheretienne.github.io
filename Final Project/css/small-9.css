@@ -186,6 +186,10 @@ footer {
       text-emphasis-position:left;
   }
 
-  .tours-frame{
-    text-align: left;
+  .description{
+      display: flexbox;
   }
+
+  
+
+  
